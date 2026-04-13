@@ -46,4 +46,13 @@ namespace CyberApp_part1
             Console.WriteLine(new string('─', 60));
             Console.ResetColor();
         }
+
+        //showing user prompt in yellow color
+        public static void ShowUserPrompt()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(" You: ");
+            Console.ResetColor();
+        }
+
     }
