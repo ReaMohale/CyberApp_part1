@@ -31,4 +31,19 @@ namespace CyberApp_part1
             Console.ResetColor();
         }
 
+        //showing welcome message in green color
+        public static void ShowWelcomeMessage()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n Welcome to the Cybersecurity Awareness Assistant! ");
+            Console.ResetColor();
+            Console.WriteLine("I'll help you learn how to stay safe online.\n");
+        }
+        //showing divider line in dark gray color
+        public static void ShowDivider()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine(new string('─', 60));
+            Console.ResetColor();
+        }
     }
