@@ -54,5 +54,22 @@ namespace CyberApp_part1
             Console.Write(" You: ");
             Console.ResetColor();
         }
-
+        //showing chatbot response in cyan color with typing effect
+        public static void TypeText(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            foreach (char c in message)
+            {
+                Console.Write(c);
+                Thread.Sleep(20);   // typing effect
+            }
+            Console.ResetColor();
+        }
+        public static void ShowError(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($" {message}");
+            Console.ResetColor();
+        }
+    }
     }

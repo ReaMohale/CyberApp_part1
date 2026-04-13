@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,7 +34,7 @@ namespace CyberApp_part1
             RunConversationLoop();
         }
 
-        //playing a greeting sound when the chatbot starts. 
+       // playing a greeting sound when the chatbot starts.
         private void PlayVoiceGreeting()
         {
             string audioPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "greeting.wav");
